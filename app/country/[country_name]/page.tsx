@@ -24,14 +24,14 @@ export default function CountryName({ params }: { params: { country_name: string
                 <h1>{country.name}</h1>
                 <h2>Capital: {country.capital}</h2>
                 <h2>Population: {country.population}</h2>
-                <Link href="/country" className="text-center bg-blue-300">Back to Country List</Link>
+                <Link href="/country" className="text-center bg-blue-600">Back to Country List</Link>
             </div>
         );
     } else {
         return (
             <div>
                 <h1>{params.country_name || "Country"} Not Found</h1>
-                <Link href="/country" className="text-center bg-blue-300">Back to Country List</Link>
+                <Link href="/country" className="text-center bg-blue-600">Back to Country List</Link>
             </div>
         );
     }
